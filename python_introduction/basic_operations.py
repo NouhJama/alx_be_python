@@ -1,5 +1,5 @@
-number1= 5
-number2= 10
+number1= 10
+number2= 5
 
 addition = number1 + number2
 subtraction = number2 - number1

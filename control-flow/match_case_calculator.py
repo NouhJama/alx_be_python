@@ -1,6 +1,6 @@
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operation = input("Choose an operation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
 result = None
 
 match operation:
@@ -22,4 +22,3 @@ if result == "Cannot divide by zero.":
     print(result)
 else:
     print(f"The result is: {result:.0f}.")
-    

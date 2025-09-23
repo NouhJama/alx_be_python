@@ -1,4 +1,7 @@
 
+from ast import main
+
+
 def perform_operation(num1, num2, operation):
     if operation == 'add':
         return num1 + num2
@@ -7,10 +10,12 @@ def perform_operation(num1, num2, operation):
     elif operation == 'multiply':
         return num1 * num2
     elif operation == 'divide':
-        if num2 != 0:
-            return num1 / num2
-        else:
+        # Check for division by zero
+
+        if num2 == 0:
             return "Error: Division by zero"
+        else:
+            return num1 / num2
     else:
         return "Error: Invalid operation"   
     

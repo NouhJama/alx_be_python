@@ -2,9 +2,9 @@ def safe_divide(numerator, denominator):
     try:
         result = float(numerator) / float(denominator)
     except ZeroDivisionError:
-        print("Error: can't divide by zero")
+        print("Error: can't divide by zero.")
     except ValueError:
-        print('Invalid input')
+        print('Error: Please enter numeric values only.')
     else:
         return f"The result of the division is {result:.1f}"
 
